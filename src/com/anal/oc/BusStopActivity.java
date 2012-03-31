@@ -19,7 +19,7 @@ public class BusStopActivity extends Activity {
 		search.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
-				setContentView(R.layout.busstopsearch);
+				setContentView(R.layout.busstopschedule);
 			}
 		});        
 	}
