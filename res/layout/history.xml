@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/entireFavourite"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<Button 
+    android:id="@+id/clearAll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="Clear All" />
+
+<TableLayout
+    android:id="@+id/historyTable"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:stretchColumns="1" >
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#DADADA" />
 
     <TableRow
         android:id="@+id/tableRow1"
@@ -32,13 +52,6 @@
             android:layout_column="1"
             android:text="   2 Bayshore" />
 
-        <Button
-            android:id="@+id/remove1"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:text="Remove" />
     </TableRow>
 
     <TableRow
@@ -61,7 +74,7 @@
         android:background="#DADADA" />
 
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/tableRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -76,7 +89,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow5"
+        android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -87,17 +100,10 @@
             android:layout_column="1"
             android:text="   2 Bayshore" />
 
-        <Button
-            android:id="@+id/remove2"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:text="Remove" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/tableRow3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dip" >
@@ -116,7 +122,7 @@
         android:background="#DADADA" />
 
     <TableRow
-        android:id="@+id/tableRow7"
+        android:id="@+id/tableRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -131,7 +137,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow8"
+        android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -142,17 +148,59 @@
             android:layout_column="1"
             android:text="   2 Bayshore" />
 
-        <Button
-            android:id="@+id/remove3"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:text="Remove" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow9"
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip" >
+
+        <TextView
+            android:id="@+id/stopTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="      12:13, 12:26" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#DADADA" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/stopName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:paddingLeft="3dip"
+            android:paddingTop="5dip"
+            android:text="2359 - Ellendale" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/stopRoute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="   2 Bayshore" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dip" >
@@ -171,3 +219,4 @@
         android:background="#DADADA" />
 
 </TableLayout>
+</LinearLayout>
