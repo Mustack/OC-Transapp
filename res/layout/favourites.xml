@@ -8,7 +8,7 @@
         android:id="@+id/entireFavourite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="2">
+        android:stretchColumns="1">
 
         <TableRow
             android:id="@+id/tableRow1"
@@ -35,15 +35,14 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="   2 Bayshore" />
-            
-            
-             <Button
+
+            <Button
                 android:id="@+id/remove"
-                android:layout_column="2"
+                android:layout_column="1"
                 style="?android:attr/buttonStyleSmall"
-     			android:layout_height="wrap_content"
-     			android:layout_width="wrap_content"
-     			android:text="Remove Favourite" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove" />
 
         </TableRow>
 
