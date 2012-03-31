@@ -2,3 +2,4 @@
 *.dex
 *.ap_
 R.java
+*.cache
