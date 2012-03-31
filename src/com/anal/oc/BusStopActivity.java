@@ -23,4 +23,8 @@ public class BusStopActivity extends Activity {
 			}
 		});        
 	}
+	
+	public void close(View v) {
+		setContentView(R.layout.busstopsearch);
+	}
 }
