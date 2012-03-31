@@ -1,1 +1,4 @@
 *.class
+*.dex
+*.ap_
+R.java
